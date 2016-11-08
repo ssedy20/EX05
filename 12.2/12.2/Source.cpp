@@ -20,7 +20,7 @@ int main()
 		1, 2, 3, 4, 8, 15, 23, 31
 	};
 
-	cout << "Linear Search (intArray, 3, 8) is" << search(intArray, 3, 8) << endl; //re
+	cout << "Linear Search (intArray, 3, 8) is" << search(intArray, 3, 8) << endl; //returns linear search//
 	cout << "Linear Search (intArray, 10, 8) is " << search(intArray, 10, 8) << endl;
 	return 0;
 }

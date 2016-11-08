@@ -1,4 +1,4 @@
-#include <iostream>
+Will #include <iostream>
 #include<vector>
 #include "accountclass.h"
 
@@ -7,8 +7,6 @@ using namespace std;
 
 int main()
 {
-	string accountChoice;
-	int selection;
 	double transaction = 0;
 
 	Account::Account()
@@ -26,9 +24,9 @@ int main()
 		balance += money;
 	}
 	void Account::Withdraw(double money)
-	{
+	{   /*Will result in warning if George tries to take money he doesn't have*/
 		if (money > balance)
-			cout << "Error: Insufficient Funds" << endl;
+			cout << "Error: Insufficient Funds" << endl; 
 		else
 			balance -= money;
 	}
@@ -37,8 +35,8 @@ int main()
 		return balance;
 	}
 	do
-	{
-		cout << "Please make a selection:" << endl;
+	{	//prompts George for choice//
+		cout << " Please make a selection:" << endl; 
 		cout << "1.) Deposit" << endl;
 		cout << "2.) Withdraw" << endl;
 		cout << "3.) Transfer" << endl;
@@ -65,7 +63,7 @@ int main()
 			withdraw(transaction);
 		}
 		else if (selection == 3)
-		{
+		{  //prompts for transaction and/or closes program//
 			
 			cout << endl << "Please enter the amount to be transferred:" << endl;
 			cin >> transaction;
@@ -76,7 +74,7 @@ int main()
 		else if (selection == 4)
 			printBalances();
 		else
-			cout << "Closing program, Goodbye George." << endl;
+			cout << "Closing program, Goodbye George." << endl; //closes out program//
 	} while (selection != 5);
 
 	return 0;
@@ -84,18 +82,18 @@ int main()
 
 void deposit(double amount, string account)
 {
-	Account savings, checking;
+	Account checking;
 	checking.Deposit(amount);
 }
 
 void withdraw(double amount, string account)
 {
-	Account savings, checking;
+	Account  checking;
 	checking.Withdraw(amount);
 }
 
 void printBalances()
-{
+{ //returns balance in checking account//
 	Account checking;
 
 	cout << "Your current balance is: " << checking.getBalance() << endl

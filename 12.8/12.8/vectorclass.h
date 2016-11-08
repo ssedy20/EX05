@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 using namespace std;
-
+//Sarah Sedy HW5 12.8 172.1//
 template <typename T>
 class vector
 {

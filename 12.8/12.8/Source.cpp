@@ -1,9 +1,9 @@
 #include <iostream>
-#include "vectorclass.h"
+#include "vectorclass.h" 
 using namespace std;
-
+//Sarah Sedy HW5 12.8 172.1//
 int main()
-{
+{ //the test program to add new elements to two different vectors//
 	vector<int> v1;
 	v1.push_back(1);
 	v1.push_back(2);

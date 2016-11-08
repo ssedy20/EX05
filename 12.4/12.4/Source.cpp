@@ -1,11 +1,11 @@
-#include <iostream>
+ #include <iostream>
 #include <string>
 using namespace std;
-//Sarah Sedy HW5 12.4//
+//Sarah Sedy HW5 12.4 172.1//
 
 template <typename T>
 bool isSorted(const T list[], int size)
-{
+{ //checks to see if elements in the array are sorted//
 	for (int i = 0; i < size - 1; i++)
 		if (list[i] > list[i + 1])
 			return false;
@@ -13,7 +13,7 @@ bool isSorted(const T list[], int size)
 }
 
 int main()
-{
+{	//following lines of code will check to see if the 3 lists have sorted arrays//
 	int list1[] =
 	{
 		1, 9, 45, 66, 157, 1335

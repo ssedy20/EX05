@@ -15,7 +15,7 @@ int main()
 	v2.push_back(6);
 	v2.push_back(7);
 
-	v1.swap.(v2)
+	v1.swap.(v2);
 
 	for (int i = 0; i < v1.size(); i++)
 		cout << v1.at(i) << " ";

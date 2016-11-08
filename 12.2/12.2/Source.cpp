@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
+//Sarah Sedy HW5 12.2 171.1//
 template <typename T>
-int search(T list[], int key, int size)
+int search(T list[], int key, int size) //looks for and compares every element in the array with an element in the key//
 {
 	for (int i = 0; i < size; i++)
 	{
@@ -20,7 +20,7 @@ int main()
 		1, 2, 3, 4, 8, 15, 23, 31
 	};
 
-	cout << "Linear Search (intArray, 3, 8) is" << search(intArray, 3, 8) << endl;
+	cout << "Linear Search (intArray, 3, 8) is" << search(intArray, 3, 8) << endl; //re
 	cout << "Linear Search (intArray, 10, 8) is " << search(intArray, 10, 8) << endl;
 	return 0;
 }

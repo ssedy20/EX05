@@ -1,4 +1,4 @@
-#include <iostream>
+ #include <iostream>
 #include <vector>
 
 using namespace std;
@@ -14,7 +14,7 @@ void shuffle(vector<T> &v);
 	v.push_back(3);
 	v.push_back(4); 
 	v.push_back(5);
-	v.push_back(6);
+	v.push_back(6); //adds 6 new items after each previous element//
 
 		shuffle(v);
 
@@ -25,7 +25,7 @@ void shuffle(vector<T> &v);
 }
 
 template<typename T>
-void shuffle(vector<T> &v)
+void shuffle(vector<T> &v) //following line of code will values into vector and then shuffle them//
 {
 	srand(time(0));
 	for (int i = 0; i < v.size(); i++)
